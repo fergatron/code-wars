@@ -13,7 +13,7 @@ mathFn.basicOp = function(operation, value1, value2) {
 /**
 * find the smallest integer
 * https://www.codewars.com/kata/55a2d7ebe362935a210000b2
-* @param arguments
+* @param arguments (Array)
 * @return result (Intger)
 */
 mathFn.findSmallestInt = function(args) {
