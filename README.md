@@ -1,7 +1,7 @@
 # code-wars
 This application houses my solutions to various code challenges on http://codewars.com.
 
-_Achieve mastery through challenge._
+> Achieve mastery through challenge.
 
 ## Technologies
 * JavaScript
