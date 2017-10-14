@@ -1,0 +1,22 @@
+{
+  "name": "code-wars",
+  "version": "1.0.0",
+  "description": "This application houses my solutions to various code challenges on http://codewars.com.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fergatron/code-wars.git"
+  },
+  "author": "Marc Ferguson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fergatron/code-wars/issues"
+  },
+  "homepage": "https://github.com/fergatron/code-wars#readme",
+  "devDependencies": {
+    "mocha": "^4.0.1"
+  }
+}
