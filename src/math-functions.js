@@ -20,4 +20,22 @@ mathFn.findSmallestInt = function(args) {
   return Math.min.apply(null, args);
 }
 
+/**
+* sum two smallest integers
+* https://www.codewars.com/kata/558fc85d8fd1938afb000014
+* @param arguments (Array)
+* @return calculated value (Integer)
+*/
+mathFn.sumOfTwoSmallestIntegers = function(args) {
+  if (Array.isArray(args)) {
+    const argsCopy = args.slice();
+    const smallValue1 = Math.min.apply(null, argsCopy);
+
+    argsCopy.splice(argsCopy.indexOf(smallValue1),1);
+
+    return smallValue1 + Math.min.apply(null, argsCopy);
+  }
+  return 0;
+}
+
 module.exports = mathFn;

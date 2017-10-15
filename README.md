@@ -10,6 +10,7 @@ This application houses my solutions to various code challenges on http://codewa
 * Node / NPM
 
 ## Methodologies
+* Behavioral-driven development (BDD)
 * Javadoc
 * Test-driven development (TDD)
 
