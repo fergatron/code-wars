@@ -1,8 +1,9 @@
-var assert = require('assert');
+const assert = require('assert');
 
 // katas
-var mathFn = require('../src/math-functions.js');
-var paperRockSiccors = require('../src/paper-rock-scissors.js');
+const arrayFn = require('../src/arrayFn');
+const mathFn = require('../src/mathFn');
+const paperRockSiccors = require('../src/paper-rock-scissors');
 
 describe('Katas', function() {
 
@@ -38,5 +39,12 @@ describe('Katas', function() {
       assert.equal('Player 2 won!', paperRockSiccors.play('scissors', 'rock'));
       assert.equal('Draw!', paperRockSiccors.play('paper', 'paper'));
     });
+  });
+
+  describe('array-specific logic operations', function() {
+      // https://www.codewars.com/kata/523f5d21c841566fde000009
+      it('should return the difference between two arrays.', function() {
+          assert.equal([2], arrayFn.diff([1,2], [1]));
+      });
   });
 });
