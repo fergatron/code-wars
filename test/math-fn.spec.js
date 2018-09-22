@@ -1,11 +1,7 @@
 const assert = require('assert');
-
-// katas
-const arrayFn = require('../src/arrayFn');
 const mathFn = require('../src/mathFn');
-const paperRockSiccors = require('../src/paper-rock-scissors');
 
-describe('Katas', function() {
+describe('Tests for math function module.', function() {
 
   describe('basic mathematical operations', function() {
     // https://www.codewars.com/kata/57356c55867b9b7a60000bd7
@@ -30,21 +26,5 @@ describe('Katas', function() {
       assert.equal(24, mathFn.sumOfTwoSmallestIntegers([23, 71, 33, 82, 1]));
       assert.equal(16, mathFn.sumOfTwoSmallestIntegers([52, 76, 14, 12, 4]));
     });
-  });
-
-  describe('custom logic operations', function() {
-    // https://www.codewars.com/kata/5672a98bdbdd995fad00000f
-    it('should determine a winner based on rock-paper-sissors logic.', function() {
-      assert.equal('Player 1 won!', paperRockSiccors.play('rock', 'scissors'));
-      assert.equal('Player 2 won!', paperRockSiccors.play('scissors', 'rock'));
-      assert.equal('Draw!', paperRockSiccors.play('paper', 'paper'));
-    });
-  });
-
-  describe('array-specific logic operations', function() {
-      // https://www.codewars.com/kata/523f5d21c841566fde000009
-      it('should return the difference between two arrays.', function() {
-          assert.equal([2], arrayFn.diff([1,2], [1]));
-      });
   });
 });
